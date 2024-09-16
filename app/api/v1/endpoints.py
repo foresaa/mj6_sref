@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status, File, UploadFile
 from sqlalchemy.orm import Session
 from app.db.session import get_db
+from app.models.image import  Image  # Rename import as Image
 from app.schemas.image import ImageCreate, ImageResponse
-from app.models.image import Image
 from fastapi.staticfiles import StaticFiles
 import shutil
 import os
