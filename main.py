@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 import os
 from fastapi.staticfiles import StaticFiles
 
-load_dotenv()
+from dotenv import load_dotenv
+load_dotenv(dotenv_path="C:/MJ6_SREF/.env")
+
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 SECRET_KEY = os.getenv("SECRET_KEY")
