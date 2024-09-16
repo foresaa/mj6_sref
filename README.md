@@ -1,3 +1,6 @@
+![Logo](Andel_Logo.png)
+
+
 # mj6_sref
 Pilot for Midjourney --sref curations
 
