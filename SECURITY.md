@@ -1,4 +1,6 @@
-
+<div align="center">
+  <img src="Andel_Logo.png" alt="Logo" width="200" height="200"/>
+</div>
 
 # Security Policy
 
