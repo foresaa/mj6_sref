@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: mj6_sref_service
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: mj6_sref_db
+          property: connectionString
+
+databases:
+  - name: mj6_sref_db
+    databaseType: postgresql
+    plan: free
