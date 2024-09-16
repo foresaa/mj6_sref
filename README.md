@@ -1,4 +1,6 @@
-![Logo](Andel_Logo.png)
+<div align="center">
+  <img src="Andel_Logo.png" alt="Logo" width="200" height="200"/>
+</div>
 
 
 # mj6_sref
