@@ -6,4 +6,7 @@ class ImageParameter(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     file_name = Column(String, index=True)
-    file_path = Column(String, index=True)
+    file_path = Column(String)
+    sref_number = Column(Integer)
+    sref_description = Column(String)
+    twitter_id = Column(String)

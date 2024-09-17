@@ -2,17 +2,24 @@
   <img src="Andel_Logo.png" alt="Logo" width="200" height="200"/>
 </div>
 
+# Midjourney Style Reference Parameters Database
 
-# mj6_sref
-Pilot for Midjourney --sref curations
+## Situation
 
-# Midjourney AI Image Rendering Curation Database
+As there are numerous posts on X (formerly Twitter) in the AI art community sharing Midjourney style reference parameters, known as `--sref`, there is an opportunity for the benefit of all to curate and share them in a database.
 
-This project allows ai artists to upload and share AI-generated image --sref parameters from Midjourney, along with descriptions of how they work and the corresponding images.
+## Complication
 
-## Features:
-- User authentication for image uploads
-- Browse and search through a curated collection of AI image parameters
-- FastAPI backend with PostgreSQL database
-- Deployed on Render for scalability
+No current database exists that is widely shared.
 
+## Resolution
+
+This project sets out to provide a curated database for users to contribute to the collection of `--sref` parameters.
+
+Users will be able to access the database by signing in and uploading the `--sref` parameter code, for example, `123456`, along with the image file and their X (formerly Twitter) ID, i.e., `@foresaa`.
+
+Users who want to browse can view the database and perform searches.
+
+## Action
+
+This database is in progress and expected to be completed by the end of September 2024.
