@@ -107,4 +107,4 @@ async def delete_image(image_id: int, db: Session = Depends(get_db)):
     return {"message": "Image deleted successfully"}
 
 # Serve static files
-router.mount("/static", StaticFiles(directory="static"), name="static")
+router.mount("/static", StaticFiles(directory="build/static"), name="static")
