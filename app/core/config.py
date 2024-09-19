@@ -1,6 +1,7 @@
 import os
 from pydantic import BaseSettings
 
+"""TEST"""
 class Settings(BaseSettings):
     SECRET_KEY: str = os.getenv('SECRET_KEY')
     DATABASE_URL: str = os.getenv('DATABASE_URL')
