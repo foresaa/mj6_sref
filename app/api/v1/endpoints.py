@@ -1,11 +1,20 @@
+from app.services import save_file
 from fastapi import APIRouter, Depends, Form, HTTPException, status, File, UploadFile, Request
 from sqlalchemy.orm import Session
-from app.db.session import get_db
+#from app.db.session import get_db
 from app.schemas.image import ImageCreate, ImageResponse
 from app.models.image_parameter import ImageParameter
 from fastapi.staticfiles import StaticFiles
 import shutil
 import os
+
+
+try:
+    from app.db.session import get_db
+except ImportError:
+    # Mock function for documentation generation
+    def get_db():
+        pass
 
 router = APIRouter()
 
