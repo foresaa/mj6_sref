@@ -1,4 +1,4 @@
-from app.services import save_file
+from app.services.image_service import save_file
 from fastapi import APIRouter, Depends, Form, HTTPException, status, File, UploadFile, Request
 from sqlalchemy.orm import Session
 #from app.db.session import get_db
